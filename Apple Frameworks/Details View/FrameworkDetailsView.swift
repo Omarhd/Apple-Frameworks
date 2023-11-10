@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct FrameworkDetailsView: View {
-    
+
+    @Binding var isShowingDetailsView: Bool
     var farmework: Framework
     
     var body: some View {
@@ -17,7 +18,7 @@ struct FrameworkDetailsView: View {
             HStack {
                 Spacer()
                 Button {
-
+                    isShowingDetailsView = false
                 } label: {
                     DismissButton()
                 }
@@ -46,5 +47,5 @@ struct FrameworkDetailsView: View {
 }
 
 #Preview {
-    FrameworkDetailsView(farmework: MockData.sampleFramework)
+    FrameworkDetailsView(isShowingDetailsView: .constant(false), farmework: MockData.sampleFramework)
 }
