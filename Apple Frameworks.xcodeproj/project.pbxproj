@@ -20,6 +20,9 @@
 		1699A8AA2AFDD69C009259EB /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8A92AFDD69C009259EB /* AFButton.swift */; };
 		1699A8AC2AFDD7D0009259EB /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8AB2AFDD7D0009259EB /* DismissButton.swift */; };
 		1699A8AE2AFDF14F009259EB /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8AD2AFDF14F009259EB /* FrameworkGridViewModel.swift */; };
+		1699A8B12AFDFB32009259EB /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8B02AFDFB32009259EB /* SafariView.swift */; };
+		1699A8B32AFE00CF009259EB /* FrameworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8B22AFE00CF009259EB /* FrameworkListView.swift */; };
+		1699A8B52AFE0499009259EB /* FrameworkListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8B42AFE0499009259EB /* FrameworkListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		1699A8A92AFDD69C009259EB /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		1699A8AB2AFDD7D0009259EB /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 		1699A8AD2AFDF14F009259EB /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		1699A8B02AFDFB32009259EB /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		1699A8B22AFE00CF009259EB /* FrameworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListView.swift; sourceTree = "<group>"; };
+		1699A8B42AFE0499009259EB /* FrameworkListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		1699A8752AFDC51B009259EB /* Apple Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1699A8AF2AFDFB1A009259EB /* Learn More View */,
 				1699A8A62AFDD0E1009259EB /* Details View */,
 				1699A8A02AFDC5B8009259EB /* Frameworks */,
 				1699A8762AFDC51B009259EB /* Apple_FrameworksApp.swift */,
@@ -147,6 +154,7 @@
 				1699A8A12AFDC5C6009259EB /* FrameworkModel.swift */,
 				1699A8782AFDC51B009259EB /* FrameworkGridView.swift */,
 				1699A8AD2AFDF14F009259EB /* FrameworkGridViewModel.swift */,
+				1699A8B22AFE00CF009259EB /* FrameworkListView.swift */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1699A8A42AFDC7FE009259EB /* FrameworkCell.swift */,
+				1699A8B42AFE0499009259EB /* FrameworkListCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +176,14 @@
 				1699A8AB2AFDD7D0009259EB /* DismissButton.swift */,
 			);
 			path = "Details View";
+			sourceTree = "<group>";
+		};
+		1699A8AF2AFDFB1A009259EB /* Learn More View */ = {
+			isa = PBXGroup;
+			children = (
+				1699A8B02AFDFB32009259EB /* SafariView.swift */,
+			);
+			path = "Learn More View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1699A8AC2AFDD7D0009259EB /* DismissButton.swift in Sources */,
+				1699A8B12AFDFB32009259EB /* SafariView.swift in Sources */,
+				1699A8B52AFE0499009259EB /* FrameworkListCellView.swift in Sources */,
+				1699A8B32AFE00CF009259EB /* FrameworkListView.swift in Sources */,
 				1699A8A52AFDC7FE009259EB /* FrameworkCell.swift in Sources */,
 				1699A8A82AFDD0FA009259EB /* FrameworkDetailsView.swift in Sources */,
 				1699A8792AFDC51B009259EB /* FrameworkGridView.swift in Sources */,

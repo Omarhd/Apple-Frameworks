@@ -10,6 +10,8 @@ import SwiftUI
 struct FrameworkDetailsView: View {
 
     @Binding var isShowingDetailsView: Bool
+    @State private var isShowingSafaryView: Bool = false
+    
     var farmework: Framework
     
     var body: some View {
@@ -38,14 +40,17 @@ struct FrameworkDetailsView: View {
                 Spacer()
                 
                 Button {
-                    
+                    isShowingSafaryView = true
                 } label: {
                     AFButton(title: "Learn More About \(farmework.name)")            }
             }
         }
+        .sheet(isPresented: $isShowingSafaryView){
+            SafariView(url: URL(string: farmework.urlString ?? "")!)
+        }
     }
 }
 
-#Preview {
-    FrameworkDetailsView(isShowingDetailsView: .constant(false), farmework: MockData.sampleFramework)
-}
+//#Preview {
+//    FrameworkDetailsView(isShowingDetailsView: .constant(false), isShowingSafaryView: false, farmework: MockData.sampleFramework)
+//}
