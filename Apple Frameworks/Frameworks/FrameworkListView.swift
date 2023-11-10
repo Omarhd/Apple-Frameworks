@@ -15,7 +15,7 @@ struct FrameworkListView: View {
         List {
             ForEach(MockData.frameworks) { framework in
                 NavigationLink(destination: FrameworkDetailsView(isShowingDetailsView: $viewModel.isShowingDetailsView,
-                                                                 farmework: framework)) {
+                                                                 framework: framework, isPresentedFromGrid: false)) {
                     FrameworkListCellView(framework: framework)
                 }
             }
@@ -23,7 +23,7 @@ struct FrameworkListView: View {
         .listStyle(.grouped)
         .sheet(isPresented: $viewModel.isShowingDetailsView) {
             FrameworkDetailsView(isShowingDetailsView: $viewModel.isShowingDetailsView,
-                                 farmework: viewModel.selectedFramework!)
+                                 framework: viewModel.selectedFramework!, isPresentedFromGrid: false)
         }
     }
 }

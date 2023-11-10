@@ -14,6 +14,9 @@ struct DismissButton: View {
             .aspectRatio(contentMode: .fit)
             .tint(.pink)
             .frame(width: 25, height: 25)
+            .padding(.top, 12)
+            .padding(.trailing, 12)
+
     }
 }
 

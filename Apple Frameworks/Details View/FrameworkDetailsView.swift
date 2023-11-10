@@ -8,30 +8,32 @@
 import SwiftUI
 
 struct FrameworkDetailsView: View {
-
-    @Binding var isShowingDetailsView: Bool
-    @State private var isShowingSafaryView: Bool = false
     
-    var farmework: Framework
+    @Binding var isShowingDetailsView: Bool
+    @State private var isShowingSafariView: Bool = false
+    
+    var framework: Framework
+    var isPresentedFromGrid: Bool
     
     var body: some View {
-        
         VStack {
             HStack {
                 Spacer()
-                Button {
-                    isShowingDetailsView = false
-                } label: {
-                    DismissButton()
+                if !isPresentedFromGrid {
+                    EmptyView() // Hide the "x" button when presented from grid
+                } else {
+                    Button(action: {
+                        isShowingDetailsView = false
+                    }) {
+                        DismissButton()
+                    }
                 }
             }
-            .padding()
-            Spacer()
-            
+
             VStack(spacing: 12) {
-                FrameworkCell(framework: farmework)
+                FrameworkCell(framework: framework)
                 
-                Text(farmework.description)
+                Text(framework.description)
                     .font(.title3)
                     .fontWeight(.regular)
                     .minimumScaleFactor(0.5)
@@ -39,18 +41,15 @@ struct FrameworkDetailsView: View {
                 
                 Spacer()
                 
-                Button {
-                    isShowingSafaryView = true
-                } label: {
-                    AFButton(title: "Learn More About \(farmework.name)")            }
+                Button(action: {
+                    isShowingSafariView = true
+                }) {
+                    AFButton(title: "Learn More About \(framework.name)")
+                }
             }
         }
-        .sheet(isPresented: $isShowingSafaryView){
-            SafariView(url: URL(string: farmework.urlString ?? "")!)
+        .sheet(isPresented: $isShowingSafariView) {
+            SafariView(url: URL(string: framework.urlString ?? "")!)
         }
     }
 }
-
-//#Preview {
-//    FrameworkDetailsView(isShowingDetailsView: .constant(false), isShowingSafaryView: false, farmework: MockData.sampleFramework)
-//}

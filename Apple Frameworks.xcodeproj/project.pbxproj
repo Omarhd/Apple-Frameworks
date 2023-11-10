@@ -23,6 +23,7 @@
 		1699A8B12AFDFB32009259EB /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8B02AFDFB32009259EB /* SafariView.swift */; };
 		1699A8B32AFE00CF009259EB /* FrameworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8B22AFE00CF009259EB /* FrameworkListView.swift */; };
 		1699A8B52AFE0499009259EB /* FrameworkListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8B42AFE0499009259EB /* FrameworkListCellView.swift */; };
+		1699A8B72AFE06B3009259EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A8B62AFE06B3009259EB /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		1699A8B02AFDFB32009259EB /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		1699A8B22AFE00CF009259EB /* FrameworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListView.swift; sourceTree = "<group>"; };
 		1699A8B42AFE0499009259EB /* FrameworkListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListCellView.swift; sourceTree = "<group>"; };
+		1699A8B62AFE06B3009259EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				1699A8A62AFDD0E1009259EB /* Details View */,
 				1699A8A02AFDC5B8009259EB /* Frameworks */,
 				1699A8762AFDC51B009259EB /* Apple_FrameworksApp.swift */,
+				1699A8B62AFE06B3009259EB /* ContentView.swift */,
 				1699A87A2AFDC51D009259EB /* Assets.xcassets */,
 				1699A87C2AFDC51D009259EB /* Preview Content */,
 			);
@@ -318,6 +321,7 @@
 			files = (
 				1699A8AC2AFDD7D0009259EB /* DismissButton.swift in Sources */,
 				1699A8B12AFDFB32009259EB /* SafariView.swift in Sources */,
+				1699A8B72AFE06B3009259EB /* ContentView.swift in Sources */,
 				1699A8B52AFE0499009259EB /* FrameworkListCellView.swift in Sources */,
 				1699A8B32AFE00CF009259EB /* FrameworkListView.swift in Sources */,
 				1699A8A52AFDC7FE009259EB /* FrameworkCell.swift in Sources */,
