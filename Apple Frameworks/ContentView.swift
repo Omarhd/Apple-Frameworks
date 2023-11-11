@@ -37,6 +37,7 @@ struct ContentView: View {
             }
             .navigationTitle("List View")
         }
+        .accentColor(Color(.label))
     }
 }
 
